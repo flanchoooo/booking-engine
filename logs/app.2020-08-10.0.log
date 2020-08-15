@@ -1,0 +1,573 @@
+21:48:00.916 [main] INFO  c.f.p.payroll.PayrollApplication - Starting PayrollApplication on DESKTOP-J4LSDLJ with PID 17720 (C:\Users\Administrator\Documents\IdeaProjects\payroll\target\classes started by Administrator in C:\Users\Administrator\Documents\IdeaProjects\payroll) 
+21:48:00.929 [main] INFO  c.f.p.payroll.PayrollApplication - The following profiles are active: dev 
+21:48:02.881 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode. 
+21:48:03.177 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 279ms. Found 24 JPA repository interfaces. 
+21:48:04.225 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9002 (http) 
+21:48:04.245 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+21:48:04.245 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35] 
+21:48:04.462 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext 
+21:48:04.541 [main] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'requestLoggingFilter' configured for use 
+21:48:04.813 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+21:48:04.831 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler' 
+21:48:04.943 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+21:48:05.072 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.15.Final 
+21:48:05.565 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+21:48:05.790 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+21:48:06.044 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+21:48:06.085 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect 
+21:48:09.631 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+21:48:09.670 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+21:48:15.285 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+21:48:15.900 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+21:48:17.224 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9002 (http) with context path '/api' 
+21:48:17.229 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+21:48:17.331 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+21:48:17.517 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+21:48:18.333 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_1 
+21:48:18.341 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_1 
+21:48:18.373 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_2 
+21:48:18.390 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_1 
+21:48:18.410 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_1 
+21:48:18.423 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_3 
+21:48:18.443 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_2 
+21:48:18.524 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_1 
+21:48:18.547 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_4 
+21:48:18.552 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_1 
+21:48:18.560 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_2 
+21:48:18.577 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_2 
+21:48:18.587 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_5 
+21:48:18.592 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_3 
+21:48:18.599 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_3 
+21:48:18.611 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_3 
+21:48:18.628 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_6 
+21:48:18.636 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_4 
+21:48:18.646 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_2 
+21:48:18.655 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_4 
+21:48:18.672 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_4 
+21:48:18.677 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_7 
+21:48:18.684 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_5 
+21:48:18.700 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_5 
+21:48:18.727 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_3 
+21:48:18.733 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByCompanyIdUsingGET_1 
+21:48:18.739 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_8 
+21:48:18.756 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_6 
+21:48:18.761 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_2 
+21:48:18.781 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_9 
+21:48:18.832 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_10 
+21:48:18.871 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_4 
+21:48:18.908 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_11 
+21:48:18.995 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories… 
+21:48:19.152 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized! 
+21:48:19.232 [main] INFO  c.f.p.payroll.PayrollApplication - Started PayrollApplication in 19.61 seconds (JVM running for 24.336) 
+21:49:23.333 [http-nio-9002-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+21:49:23.355 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+21:49:23.736 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+21:49:23.753 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/industry, client=127.0.0.1] 
+21:49:23.937 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/industry, client=127.0.0.1] 
+21:49:23.954 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/currency, client=127.0.0.1] 
+21:49:23.968 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/currency, client=127.0.0.1] 
+21:49:34.251 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable, client=127.0.0.1] 
+21:49:34.259 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable, client=127.0.0.1] 
+21:49:34.272 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/1, client=127.0.0.1] 
+21:49:34.317 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/1, client=127.0.0.1] 
+21:49:34.329 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/1, client=127.0.0.1] 
+21:49:34.336 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/1, client=127.0.0.1] 
+21:49:34.346 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/2, client=127.0.0.1] 
+21:49:34.350 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/2, client=127.0.0.1] 
+21:49:34.362 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/3, client=127.0.0.1] 
+21:49:34.367 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/3, client=127.0.0.1] 
+21:49:34.378 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/4, client=127.0.0.1] 
+21:49:34.381 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/4, client=127.0.0.1] 
+21:49:34.392 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/5, client=127.0.0.1] 
+21:49:34.396 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/5, client=127.0.0.1] 
+21:49:34.407 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/currency/1, client=127.0.0.1] 
+21:49:34.412 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/currency/1, client=127.0.0.1] 
+21:50:13.870 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable, client=127.0.0.1] 
+21:50:13.880 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable, client=127.0.0.1] 
+21:50:13.889 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/1, client=127.0.0.1] 
+21:50:13.892 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/1, client=127.0.0.1] 
+21:50:13.901 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/1, client=127.0.0.1] 
+21:50:13.904 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/1, client=127.0.0.1] 
+21:50:13.914 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/2, client=127.0.0.1] 
+21:50:13.917 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/2, client=127.0.0.1] 
+21:50:13.926 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/3, client=127.0.0.1] 
+21:50:13.928 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/3, client=127.0.0.1] 
+21:50:13.942 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/4, client=127.0.0.1] 
+21:50:13.945 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/4, client=127.0.0.1] 
+21:50:13.953 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/taxtable/taxband/rate/5, client=127.0.0.1] 
+21:50:13.955 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/taxtable/taxband/rate/5, client=127.0.0.1] 
+21:50:13.963 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/currency/1, client=127.0.0.1] 
+21:50:13.967 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/currency/1, client=127.0.0.1] 
+21:50:18.351 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/statutory/pension, client=127.0.0.1] 
+21:50:18.360 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/statutory/pension, client=127.0.0.1] 
+21:50:23.712 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/statutory/wcif/4, client=127.0.0.1] 
+21:50:23.715 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/statutory/wcif/4, client=127.0.0.1] 
+21:50:23.726 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/statutory/sdf, client=127.0.0.1] 
+21:50:23.733 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/statutory/sdf, client=127.0.0.1] 
+21:51:02.225 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/statutory/wcif/4, client=127.0.0.1] 
+21:51:02.229 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/statutory/wcif/4, client=127.0.0.1] 
+21:51:02.239 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/statutory/sdf, client=127.0.0.1] 
+21:51:02.242 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/statutory/sdf, client=127.0.0.1] 
+21:51:10.214 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payment/company/1, client=127.0.0.1] 
+21:51:10.229 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payment/company/1, client=127.0.0.1] 
+21:51:26.460 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package, client=127.0.0.1] 
+21:51:26.468 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package, client=127.0.0.1] 
+21:51:26.480 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package/pricing/1, client=127.0.0.1] 
+21:51:26.487 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package/pricing/1, client=127.0.0.1] 
+21:51:34.371 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package, client=127.0.0.1] 
+21:51:34.374 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package, client=127.0.0.1] 
+21:51:34.383 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package/4, client=127.0.0.1] 
+21:51:34.386 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package/4, client=127.0.0.1] 
+21:51:34.394 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package/pricing/4, client=127.0.0.1] 
+21:51:34.397 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package/pricing/4, client=127.0.0.1] 
+21:52:30.468 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package/pricing/id/11, client=127.0.0.1] 
+21:52:30.472 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package/pricing/id/11, client=127.0.0.1] 
+21:53:23.152 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package/pricing/id/11, client=127.0.0.1] 
+21:53:23.162 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@451bd0f4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.164 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f5ad550 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.165 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@445d323f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.167 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@75957ce9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.168 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a95e1c8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.170 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73ec5b9f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.171 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5e0d5317 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.172 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@a11e0b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.174 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@556f3476 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.175 [http-nio-9002-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@444ebde7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value. 
+21:53:23.179 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package/pricing/id/11, client=127.0.0.1] 
+21:53:52.223 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payment/company/1, client=127.0.0.1] 
+21:53:52.228 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payment/company/1, client=127.0.0.1] 
+21:55:17.790 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payment/company/1, client=127.0.0.1] 
+21:55:17.800 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payment/company/1, client=127.0.0.1] 
+21:55:31.915 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payment/company/1, client=127.0.0.1] 
+21:55:31.917 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payment/company/1, client=127.0.0.1] 
+21:55:37.387 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+21:55:37.392 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+21:56:40.993 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+21:56:40.996 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+22:00:37.588 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+22:00:37.600 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+22:01:18.355 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+22:01:18.365 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+22:02:59.735 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+22:02:59.740 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+22:03:12.196 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+22:03:12.202 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+22:04:03.469 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+22:04:03.474 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+22:04:31.100 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+22:04:31.104 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+22:04:39.706 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/company/1, client=127.0.0.1] 
+22:04:39.712 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/company/1, client=127.0.0.1] 
+22:05:15.386 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payment/company/1, client=127.0.0.1] 
+22:05:15.389 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payment/company/1, client=127.0.0.1] 
+22:05:18.875 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package, client=127.0.0.1] 
+22:05:18.880 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package, client=127.0.0.1] 
+22:05:18.888 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/subscription/package/pricing/1, client=127.0.0.1] 
+22:05:18.891 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/subscription/package/pricing/1, client=127.0.0.1] 
+22:06:11.097 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:06:11.102 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:06:20.877 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:06:20.881 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:06:28.731 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:06:28.733 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:06:42.927 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:06:42.931 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:07:02.217 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:07:02.219 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:12:26.210 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/employee/save, client=127.0.0.1] 
+22:12:26.280 [http-nio-9002-exec-8] INFO  c.f.p.payroll.enums.ResponseObject - RESPONSE===> {employee=com.famethe.payroll.payroll.domain.Employee@72c27325, message=You have successfully added your employee to your company profile., status=200} 
+22:12:26.288 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [POST /api/employee/save, client=127.0.0.1, payload={"_token":"oVdo3trytORKhfzAQ3Xvqy1uybPvWW2EZhqvw3lM","id":null,"firstname":"Andries","lastname":"Holmes","gender":"MALE","maritalStatus":"SINGLE","dateOfBirth":"29\/01\/1991","nationalId":"632170115D00","nationality":"Zimbabwean","address":"89 Carry","suburb":"Harare CBD","city":"Harare","country":"ZIMBABWE","phone":"+263782972378","email":"andries@poscloud.co.zw","nokName":"Samantha","nokRelationship":"Wife","nokPhone":"+263773587416","nokAddress":"89 Carry, Rhodene, Masvingo","bankAccountNumber":"1234567890","bankAccountName":"Andries Holmes","branch":"Eastgate","bankName":"NMB","contractType":"PERMANENT","dateOfEngagement":"01\/08\/2020","contractExpiryDate":null,"department":"Information & Technology","position":"Software developer","leaveEntitlement":"2","rateOfPay":"25000","companyId":1}] 
+22:13:31.740 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:13:31.745 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:14:26.357 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/1, client=127.0.0.1] 
+22:14:26.361 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/1, client=127.0.0.1] 
+22:16:11.841 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/employee/save, client=127.0.0.1] 
+22:16:11.862 [http-nio-9002-exec-4] INFO  c.f.p.payroll.enums.ResponseObject - RESPONSE===> {employee=com.famethe.payroll.payroll.domain.Employee@72c27325, message=You have successfully added your employee to your company profile., status=200} 
+22:16:11.863 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [POST /api/employee/save, client=127.0.0.1, payload={"_token":"oVdo3trytORKhfzAQ3Xvqy1uybPvWW2EZhqvw3lM","id":"1","firstname":"Andries","lastname":"Holmes","gender":"MALE","maritalStatus":"SINGLE","dateOfBirth":null,"nationalId":"632170115D00","nationality":"Zimbabwean","address":"89 Carry","suburb":"Harare CBD","city":"Harare","country":"ZIMBABWE","phone":"+263782972378","email":"andries@poscloud.co.zw","nokName":"Samantha","nokRelationship":"Wife","nokPhone":"+263773587416","nokAddress":"89 Carry, Rhodene, Masvingo","bankAccountNumber":"1234567890","bankAccountName":"Andries Holmes","branch":"Eastgate","bankName":"NMB","contractType":"PERMANENT","dateOfEngagement":"01\/08\/2020","contractExpiryDate":null,"department":"Information & Technology","position":"Software developer","leaveEntitlement":"2","rateOfPay":"25000","companyId":1}] 
+22:16:16.270 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:16:16.273 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:21:35.173 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/1, client=127.0.0.1] 
+22:21:35.182 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/1, client=127.0.0.1] 
+22:22:00.847 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:22:00.851 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:22:00.861 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/1, client=127.0.0.1] 
+22:22:00.864 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/1, client=127.0.0.1] 
+22:22:00.872 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/deduction/employee/1, client=127.0.0.1] 
+22:22:00.879 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/deduction/employee/1, client=127.0.0.1] 
+22:22:00.887 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/benefit/employee/1, client=127.0.0.1] 
+22:22:00.894 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/benefit/employee/1, client=127.0.0.1] 
+22:22:00.903 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/deduction/employee/statutory/1, client=127.0.0.1] 
+22:22:00.935 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/deduction/employee/statutory/1, client=127.0.0.1] 
+22:23:08.571 [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default' 
+22:23:08.576 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler' 
+22:23:08.576 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+22:23:08.577 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated... 
+22:23:08.579 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed. 
+22:23:18.251 [main] INFO  c.f.p.payroll.PayrollApplication - Starting PayrollApplication on DESKTOP-J4LSDLJ with PID 17448 (C:\Users\Administrator\Documents\IdeaProjects\payroll\target\classes started by Administrator in C:\Users\Administrator\Documents\IdeaProjects\payroll) 
+22:23:18.256 [main] INFO  c.f.p.payroll.PayrollApplication - The following profiles are active: dev 
+22:23:19.907 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode. 
+22:23:20.107 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 188ms. Found 24 JPA repository interfaces. 
+22:23:20.779 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9002 (http) 
+22:23:20.788 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+22:23:20.789 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35] 
+22:23:20.898 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext 
+22:23:20.952 [main] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'requestLoggingFilter' configured for use 
+22:23:21.124 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+22:23:21.136 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler' 
+22:23:21.203 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+22:23:21.271 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.15.Final 
+22:23:21.570 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+22:23:21.690 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+22:23:21.835 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+22:23:21.858 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect 
+22:23:22.810 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+22:23:22.822 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+22:23:24.112 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+22:23:24.311 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+22:23:24.679 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9002 (http) with context path '/api' 
+22:23:24.681 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+22:23:24.705 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+22:23:24.751 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+22:23:24.964 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_1 
+22:23:24.966 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_1 
+22:23:24.973 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_2 
+22:23:24.977 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_1 
+22:23:24.981 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_1 
+22:23:24.983 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_3 
+22:23:24.988 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_2 
+22:23:25.003 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_1 
+22:23:25.008 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_4 
+22:23:25.009 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_1 
+22:23:25.012 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_2 
+22:23:25.016 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_2 
+22:23:25.019 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_5 
+22:23:25.020 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_3 
+22:23:25.022 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_3 
+22:23:25.027 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_3 
+22:23:25.029 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_6 
+22:23:25.030 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_4 
+22:23:25.034 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_2 
+22:23:25.036 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_4 
+22:23:25.040 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_4 
+22:23:25.042 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_7 
+22:23:25.044 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_5 
+22:23:25.046 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_5 
+22:23:25.050 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_3 
+22:23:25.052 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByCompanyIdUsingGET_1 
+22:23:25.054 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_8 
+22:23:25.056 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_6 
+22:23:25.058 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_2 
+22:23:25.062 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_9 
+22:23:25.075 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_10 
+22:23:25.084 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_4 
+22:23:25.095 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_11 
+22:23:25.116 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories… 
+22:23:25.135 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized! 
+22:23:25.151 [main] INFO  c.f.p.payroll.PayrollApplication - Started PayrollApplication in 7.831 seconds (JVM running for 9.97) 
+22:39:37.762 [http-nio-9002-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+22:39:37.784 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:39:38.399 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:40:29.440 [main] INFO  c.f.p.payroll.PayrollApplication - Starting PayrollApplication on DESKTOP-J4LSDLJ with PID 22524 (C:\Users\Administrator\Documents\IdeaProjects\payroll\target\classes started by Administrator in C:\Users\Administrator\Documents\IdeaProjects\payroll) 
+22:40:29.445 [main] INFO  c.f.p.payroll.PayrollApplication - The following profiles are active: dev 
+22:40:31.486 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode. 
+22:40:31.801 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 298ms. Found 24 JPA repository interfaces. 
+22:40:32.659 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9002 (http) 
+22:40:32.671 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+22:40:32.671 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35] 
+22:40:32.832 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext 
+22:40:32.922 [main] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'requestLoggingFilter' configured for use 
+22:40:33.135 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+22:40:33.150 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler' 
+22:40:33.229 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+22:40:33.304 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.15.Final 
+22:40:33.604 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+22:40:33.759 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+22:40:33.936 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+22:40:33.973 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect 
+22:40:35.219 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+22:40:35.250 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+22:40:36.622 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+22:40:36.842 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+22:40:37.281 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9002 (http) with context path '/api' 
+22:40:37.283 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+22:40:37.310 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+22:40:37.364 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+22:40:37.606 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_1 
+22:40:37.608 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_1 
+22:40:37.616 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_2 
+22:40:37.620 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_1 
+22:40:37.624 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_1 
+22:40:37.627 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_3 
+22:40:37.632 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_2 
+22:40:37.658 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_1 
+22:40:37.664 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_4 
+22:40:37.666 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_1 
+22:40:37.668 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_2 
+22:40:37.674 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_2 
+22:40:37.677 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_5 
+22:40:37.678 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_3 
+22:40:37.680 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_3 
+22:40:37.685 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_3 
+22:40:37.687 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_6 
+22:40:37.689 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_4 
+22:40:37.693 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_2 
+22:40:37.695 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_4 
+22:40:37.700 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_4 
+22:40:37.702 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_7 
+22:40:37.703 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_5 
+22:40:37.707 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_5 
+22:40:37.711 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_3 
+22:40:37.713 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByCompanyIdUsingGET_1 
+22:40:37.715 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_8 
+22:40:37.717 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_6 
+22:40:37.719 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_2 
+22:40:37.725 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_9 
+22:40:37.747 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_10 
+22:40:37.761 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_4 
+22:40:37.771 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_11 
+22:40:37.796 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories… 
+22:40:37.831 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized! 
+22:40:37.851 [main] INFO  c.f.p.payroll.PayrollApplication - Started PayrollApplication in 9.477 seconds (JVM running for 11.661) 
+22:40:59.378 [http-nio-9002-exec-2] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+22:40:59.400 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:40:59.926 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:41:46.950 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/employee/save, client=127.0.0.1] 
+22:41:47.105 [http-nio-9002-exec-1] INFO  c.f.p.payroll.enums.ResponseObject - RESPONSE===> {employee=com.famethe.payroll.payroll.domain.Employee@72c27325, message=You have successfully added your employee to your company profile., status=200} 
+22:41:47.153 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [POST /api/employee/save, client=127.0.0.1, payload={"_token":"oVdo3trytORKhfzAQ3Xvqy1uybPvWW2EZhqvw3lM","id":null,"firstname":"Andries","lastname":"Holmes","gender":"MALE","maritalStatus":"SINGLE","dateOfBirth":"29\/01\/1991","nationalId":"632170115D00","nationality":"Zimbabwean","address":"89 Carry","suburb":"Harare CBD","city":"Harare","country":"ZIMBABWE","phone":"+263782972378","email":"andries@poscloud.co.zw","nokName":"Samantha","nokRelationship":"Wife","nokPhone":"+263773587416","nokAddress":"89 Carry, Rhodene, Masvingo","bankAccountNumber":"1234567890","bankAccountName":"Andries Holmes","branch":"Eastgate","bankName":"NMB","contractType":"PERMANENT","dateOfEngagement":"01\/08\/2020","contractExpiryDate":null,"department":"Information & Technology","position":"Software developer","leaveEntitlement":"2","rateOfPay":"25000","companyId":1}] 
+22:41:52.086 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:41:52.101 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:42:07.677 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:42:07.686 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:42:07.701 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+22:42:07.730 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+22:42:07.742 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/deduction/employee/2, client=127.0.0.1] 
+22:42:07.751 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/deduction/employee/2, client=127.0.0.1] 
+22:42:07.763 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/benefit/employee/2, client=127.0.0.1] 
+22:42:07.770 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/benefit/employee/2, client=127.0.0.1] 
+22:42:07.782 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/deduction/employee/statutory/2, client=127.0.0.1] 
+22:42:07.847 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/deduction/employee/statutory/2, client=127.0.0.1] 
+22:42:18.629 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+22:42:18.638 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+22:42:36.850 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+22:42:36.853 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+22:42:36.867 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/payroll/save/, client=127.0.0.1] 
+22:42:36.971 [http-nio-9002-exec-2] INFO  c.f.p.payroll.enums.ResponseObject - RESPONSE===> {payroll=com.famethe.payroll.payroll.domain.Payroll@c94ae257, message=You have successfully run your payroll., status=200} 
+22:42:36.973 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [POST /api/payroll/save/, client=127.0.0.1, payload={"companyId":1}] 
+22:42:37.225 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+22:42:37.230 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+22:42:37.246 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:42:37.251 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:42:37.265 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+22:42:37.272 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+22:42:37.286 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+22:42:37.297 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+22:42:37.310 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+22:42:37.320 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+22:42:37.335 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+22:42:37.346 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+22:43:10.951 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+22:43:10.955 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+22:43:10.965 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+22:43:10.968 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+22:43:10.976 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+22:43:10.981 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+22:43:10.990 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+22:43:10.992 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+22:43:11.002 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+22:43:11.006 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+22:43:11.015 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+22:43:11.018 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:02:17.073 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:02:17.079 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:02:17.094 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:02:17.099 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:02:17.112 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:02:17.119 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:02:17.132 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:02:17.136 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:02:17.148 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:02:17.155 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:02:17.168 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:02:17.172 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:03:17.367 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:03:17.376 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:03:17.404 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:03:17.412 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:03:17.433 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:03:17.445 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:03:17.467 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:03:17.475 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:03:17.495 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:03:17.503 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:03:17.525 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:03:17.531 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:03:47.084 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:03:47.092 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:03:47.128 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:03:47.138 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:03:47.158 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:03:47.170 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:03:47.190 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:03:47.197 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:03:47.218 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:03:47.227 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:03:47.248 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:03:47.254 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:04:07.719 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:04:07.726 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:04:07.748 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:04:07.768 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:04:07.787 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:04:07.797 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:04:07.816 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:04:07.821 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:04:07.837 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:04:07.843 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:04:07.858 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:04:07.863 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:04:53.826 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:04:53.833 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:04:53.857 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:04:53.865 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:04:53.886 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:04:53.897 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:04:53.917 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:04:53.923 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:04:53.944 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:04:53.953 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:04:53.973 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:04:53.980 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:05:39.265 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:05:39.273 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:05:39.296 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:05:39.303 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:05:39.323 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:05:39.333 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:05:39.354 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:05:39.360 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:05:39.379 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:05:39.385 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:05:39.404 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:05:39.409 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:05:57.070 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:05:57.078 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:05:57.125 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:05:57.134 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:05:57.160 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:05:57.171 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:05:57.199 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:05:57.206 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:05:57.231 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:05:57.240 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:05:57.262 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:05:57.268 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:06:20.485 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:06:20.492 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:06:20.512 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:06:20.521 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:06:20.537 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:06:20.545 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:06:20.562 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:06:20.566 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:06:20.579 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:06:20.586 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:06:20.602 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:06:20.607 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:07:25.596 [main] INFO  c.f.p.payroll.PayrollApplication - Starting PayrollApplication on DESKTOP-J4LSDLJ with PID 34764 (C:\Users\Administrator\Documents\IdeaProjects\payroll\target\classes started by Administrator in C:\Users\Administrator\Documents\IdeaProjects\payroll) 
+23:07:25.603 [main] INFO  c.f.p.payroll.PayrollApplication - The following profiles are active: dev 
+23:07:27.582 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode. 
+23:07:27.839 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 242ms. Found 24 JPA repository interfaces. 
+23:07:28.657 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9002 (http) 
+23:07:28.669 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+23:07:28.670 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35] 
+23:07:28.812 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext 
+23:07:28.881 [main] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'requestLoggingFilter' configured for use 
+23:07:29.113 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+23:07:29.135 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler' 
+23:07:29.215 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+23:07:29.289 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.15.Final 
+23:07:29.658 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+23:07:29.815 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+23:07:30.009 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+23:07:30.040 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect 
+23:07:31.268 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+23:07:31.283 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+23:07:32.720 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+23:07:32.967 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+23:07:33.410 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9002 (http) with context path '/api' 
+23:07:33.412 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+23:07:33.437 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+23:07:33.484 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+23:07:33.700 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_1 
+23:07:33.702 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_1 
+23:07:33.709 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_2 
+23:07:33.713 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_1 
+23:07:33.717 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_1 
+23:07:33.720 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_3 
+23:07:33.726 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_2 
+23:07:33.747 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_1 
+23:07:33.752 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_4 
+23:07:33.754 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_1 
+23:07:33.756 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_2 
+23:07:33.762 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_2 
+23:07:33.765 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_5 
+23:07:33.766 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_3 
+23:07:33.769 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_3 
+23:07:33.773 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_3 
+23:07:33.775 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_6 
+23:07:33.777 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_4 
+23:07:33.781 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_2 
+23:07:33.783 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_4 
+23:07:33.788 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_4 
+23:07:33.790 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_7 
+23:07:33.792 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_5 
+23:07:33.795 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_5 
+23:07:33.800 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_3 
+23:07:33.802 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByCompanyIdUsingGET_1 
+23:07:33.804 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_8 
+23:07:33.807 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_6 
+23:07:33.809 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_2 
+23:07:33.814 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_9 
+23:07:33.830 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_10 
+23:07:33.842 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_4 
+23:07:33.853 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_11 
+23:07:33.877 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories… 
+23:07:33.898 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized! 
+23:07:33.915 [main] INFO  c.f.p.payroll.PayrollApplication - Started PayrollApplication in 9.386 seconds (JVM running for 11.473) 
+23:07:52.436 [http-nio-9002-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+23:07:52.458 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:07:52.941 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:07:52.958 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:07:53.110 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:07:53.124 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:07:53.172 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:07:53.185 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:07:53.196 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:07:53.211 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:07:53.226 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:07:53.245 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:07:53.255 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:08:11.827 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:08:11.836 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:08:11.855 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:08:11.863 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:08:11.880 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:08:11.889 [http-nio-9002-exec-8] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:08:11.905 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:08:11.914 [http-nio-9002-exec-10] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:08:11.933 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:08:11.940 [http-nio-9002-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:08:11.958 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:08:11.964 [http-nio-9002-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:09:05.452 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:09:05.458 [http-nio-9002-exec-4] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/company/active/1, client=127.0.0.1] 
+23:09:05.471 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/company/1, client=127.0.0.1] 
+23:09:05.476 [http-nio-9002-exec-2] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/company/1, client=127.0.0.1] 
+23:09:05.486 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/employee/2, client=127.0.0.1] 
+23:09:05.494 [http-nio-9002-exec-6] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/employee/2, client=127.0.0.1] 
+23:09:05.506 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:09:05.510 [http-nio-9002-exec-5] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/payslip/employee/2/1, client=127.0.0.1] 
+23:09:05.523 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:09:05.532 [http-nio-9002-exec-7] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/deduction/employee/2/1, client=127.0.0.1] 
+23:09:05.545 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 
+23:09:05.548 [http-nio-9002-exec-9] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [GET /api/payroll/benefit/employee/2/1, client=127.0.0.1] 

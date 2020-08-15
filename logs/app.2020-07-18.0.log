@@ -1,0 +1,57 @@
+18:25:52.228 [main] INFO  c.f.p.payroll.PayrollApplication - Starting PayrollApplication on DESKTOP-J4LSDLJ with PID 163952 (C:\Users\Administrator\Documents\IdeaProjects\payroll\target\classes started by Administrator in C:\Users\Administrator\Documents\IdeaProjects\payroll) 
+18:25:52.244 [main] INFO  c.f.p.payroll.PayrollApplication - The following profiles are active: dev 
+18:25:54.238 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode. 
+18:25:54.504 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 248ms. Found 21 JPA repository interfaces. 
+18:25:55.889 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9001 (http) 
+18:25:55.909 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat] 
+18:25:55.910 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35] 
+18:25:56.148 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext 
+18:25:56.257 [main] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Filter 'requestLoggingFilter' configured for use 
+18:25:56.595 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+18:25:56.617 [main] INFO  o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler' 
+18:25:56.739 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default] 
+18:25:56.886 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.15.Final 
+18:25:57.492 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final} 
+18:25:57.737 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting... 
+18:25:57.977 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed. 
+18:25:58.038 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect 
+18:26:00.097 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+18:26:00.120 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+18:26:01.642 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+18:26:01.883 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)] 
+18:26:02.347 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9001 (http) with context path '/api' 
+18:26:02.348 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed 
+18:26:02.387 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s) 
+18:26:02.447 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references 
+18:26:02.709 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_1 
+18:26:02.712 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_1 
+18:26:02.725 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_1 
+18:26:02.734 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_1 
+18:26:02.737 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_2 
+18:26:02.745 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_2 
+18:26:02.767 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_1 
+18:26:02.775 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_3 
+18:26:02.778 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: updateUsingPOST_1 
+18:26:02.781 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_2 
+18:26:02.788 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_2 
+18:26:02.791 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_4 
+18:26:02.793 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_3 
+18:26:02.796 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_3 
+18:26:02.800 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_3 
+18:26:02.805 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_5 
+18:26:02.808 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_4 
+18:26:02.813 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findAllUsingGET_2 
+18:26:02.817 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: deleteByIdUsingGET_4 
+18:26:02.823 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByEmployeeIdUsingGET_4 
+18:26:02.825 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_6 
+18:26:02.827 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: saveUsingPOST_5 
+18:26:02.833 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_7 
+18:26:02.851 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: findByIdUsingGET_8 
+18:26:02.874 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories… 
+18:26:02.903 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized! 
+18:26:02.926 [main] INFO  c.f.p.payroll.PayrollApplication - Started PayrollApplication in 12.341 seconds (JVM running for 19.019) 
+18:31:19.110 [http-nio-9001-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+18:31:19.176 [http-nio-9001-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/authenticate, client=0:0:0:0:0:0:0:1] 
+18:31:19.197 [http-nio-9001-exec-1] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [POST /api/authenticate, client=0:0:0:0:0:0:0:1] 
+18:37:48.140 [http-nio-9001-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - Before request [POST /api/authenticate, client=0:0:0:0:0:0:0:1] 
+18:37:48.144 [http-nio-9001-exec-3] DEBUG o.s.w.f.CommonsRequestLoggingFilter - After request [POST /api/authenticate, client=0:0:0:0:0:0:0:1] 

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/payroll</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping class="com.famethe.payroll.payroll.domain.Access"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Benefit"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Company"/>
+        <mapping class="com.famethe.payroll.payroll.domain.CompanyContribution"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Configs"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Deduction"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Employee"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Files"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Income"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Leave"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Loan"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Package"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Payment"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Platform"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Role"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Subscription"/>
+        <mapping class="com.famethe.payroll.payroll.domain.User"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Currency"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Industry"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Notification"/>
+        <mapping class="com.famethe.payroll.payroll.domain.PayeeTaxTable"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Payslip"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Pension"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Rates"/>
+        <mapping class="com.famethe.payroll.payroll.domain.TaxBand"/>
+        <mapping class="com.famethe.payroll.payroll.domain.TaxCredits"/>
+        <mapping class="com.famethe.payroll.payroll.domain.StandardDevelopmentFund"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Zimdef"/>
+        <mapping class="com.famethe.payroll.payroll.domain.EmployeeLeave"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Payroll"/>
+        <mapping class="com.famethe.payroll.payroll.domain.PayrollBenefit"/>
+        <mapping class="com.famethe.payroll.payroll.domain.PayrollDeduction"/>
+        <mapping class="com.famethe.payroll.payroll.domain.Pricing"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
